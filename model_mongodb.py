@@ -4,6 +4,7 @@ import os
 from bson import ObjectId
 
 dotenv.load_dotenv(".env")
+
 MONGO_USER = os.getenv("MONGO_USER")
 MONGO_PWD = os.getenv("MONGO_PWD")
 MONGO_DB = os.getenv("MONGO_DB")
