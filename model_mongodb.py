@@ -41,6 +41,7 @@ class Model(dict):
 
 class User(Model):
     # db_client = pymongo.MongoClient('localhost', 27017)
+    
     db_client = pymongo.MongoClient("mongodb+srv://"+MONGO_USER+":"+MONGO_PWD+"@csc307.7ijdm.mongodb.net/"+MONGO_DB+"?retryWrites=true&w=majority")
     collection = db_client["users"]["users_list"]
 
