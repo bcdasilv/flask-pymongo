@@ -6,7 +6,6 @@ import random
 import string
 from model_mongodb import User
 
-
 app = Flask(__name__)
 
 CORS(app) 
